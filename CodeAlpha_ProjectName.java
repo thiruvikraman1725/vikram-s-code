@@ -18,10 +18,9 @@ public class StudentGradeManager {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Student> students = new ArrayList<>();
 
-        System.out.println("===================================");
+       
         System.out.println("     STUDENT GRADE MANAGEMENT      ");
-        System.out.println("===================================");
-
+       
         while (true) {
             System.out.println("\nMenu:");
             System.out.println("1. Add Student");
@@ -60,7 +59,7 @@ public class StudentGradeManager {
     // Display report and statistics
     public static void displayReport(ArrayList<Student> students) {
         if (students.isEmpty()) {
-            System.out.println("\n⚠️ No students found! Add some first.");
+            System.out.println("\n No students found! Add some first.");
             return;
         }
 
@@ -97,3 +96,4 @@ public class StudentGradeManager {
         System.out.println("--------------------------------------");
     }
 }
+
